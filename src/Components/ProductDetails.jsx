@@ -127,15 +127,12 @@ function ProductDetails() {
   const showProduct = products[productId];
 
   const [size, setSize] = useState("Select Size");
-  const [quantity, setQuantity] = useState(1);
 
   const handleSizeChange = (e) => {
     setSize(e.target.value);
   };
 
-  const handleQuantity = (e) => {
-    setQuantity(e.target.value);
-  };
+  
 
   const [originalSrc, setOriginalSrc] = useState(showProduct.imgSrc);
 
@@ -143,7 +140,7 @@ function ProductDetails() {
     setOriginalSrc(srcPath);
   };
 
-  const { addToCart } = useCart();
+  const { addToCart,quantity,handleQuantity } = useCart();
 
   const handleAddToCart = () => {
     const item = {

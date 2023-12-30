@@ -2,17 +2,23 @@ import React, { useState, useEffect } from "react";
 import { useCart } from "../Context/CartContext";
 
 function Cart() {
-  const { cart, removeFromCart } = useCart();
+  const { cart, removeFromCart,quantity,handleQuantity } = useCart();
   const [subtotal, setSubtotal] = useState(0);
   const [tax, setTax] = useState(16.0);
   useEffect(() => {
     // Calculate subtotal when cart changes
     const calculatedSubtotal = cart.reduce((acc, item) => {
-      return acc + item.quantity * item.price;
+      return acc + quantity * item.price;
     }, 0);
 
     setSubtotal(calculatedSubtotal);
-  }, [cart]);
+  }, [cart,quantity]);
+
+  // const initialCart = JSON.parse(localStorage.getItem("cart")) || [];
+  console.log(cart)
+  
+
+
   return (
     <>
       {cart.length === 0 ? (
@@ -59,12 +65,14 @@ function Cart() {
                     <input
                       className="border border-[#ff523b] my-5 p-2 w-20"
                       type="number"
-                      value={cartItem.quantity}
+                      value={quantity}
+                      onChange={handleQuantity}
                       min={1}
+                      max={5}
                     />
                   </td>
                   <td className="p-4 text-right">
-                    ${cartItem.quantity * cartItem.price}
+                    ${quantity * cartItem.price}
                   </td>
                 </tr>
               ))}
