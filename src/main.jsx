@@ -20,8 +20,8 @@ import { CartProvider } from "./Context/CartContext";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path="/" element={<Layout />}>
-      <Route path="" element={<HomePage />} />
+    <Route path="/Ecommerce-Web-React/" element={<Layout />}>
+      <Route index exact element={<HomePage />} />
       <Route path="login" element={<AccountBanner />} />
       <Route path="register" element={<RegisterPage />} />
       <Route path="products" element={<ProductPage />} />

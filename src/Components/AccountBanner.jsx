@@ -40,7 +40,7 @@ function AccountBanner() {
             <p className="mt-4">
               Doesn't have an account yet?{" "}
               <NavLink
-                to="/register"
+                to="/Ecommerce-Web-React/register"
                 className="text-[#ff523b] underline hover:text-[#563434]"
               >
                 Register

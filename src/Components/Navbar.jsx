@@ -15,7 +15,7 @@ function Navbar() {
         <ul className="flex items-center">
           <li className="mx-3">
             <NavLink
-              to="/"
+              to="/Ecommerce-Web-React/"
               className={({ isActive }) =>
                 `${isActive ? "text-[#ff513b] font-semibold" : ""}`
               }
@@ -25,7 +25,7 @@ function Navbar() {
           </li>
           <li className="mx-3">
             <NavLink
-              to="/products"
+              to="/Ecommerce-Web-React/products"
               className={({ isActive }) =>
                 `${isActive ? "text-[#ff513b] font-semibold" : ""}`
               }
@@ -35,7 +35,7 @@ function Navbar() {
           </li>
           <li className="mx-3">
             <NavLink
-              to="/about"
+              to="/Ecommerce-Web-React/about"
               className={({ isActive }) =>
                 `${isActive ? "text-[#ff513b] font-semibold" : ""}`
               }
@@ -45,7 +45,7 @@ function Navbar() {
           </li>
           <li className="mx-3">
             <NavLink
-              to="/contact"
+              to="/Ecommerce-Web-React/contact"
               className={({ isActive }) =>
                 `${isActive ? "text-[#ff513b] font-semibold" : ""}`
               }
@@ -55,7 +55,7 @@ function Navbar() {
           </li>
           <li className="mx-3">
             <NavLink
-              to="/login"
+              to="/Ecommerce-Web-React/login"
               className={({ isActive }) =>
                 `${isActive ? "text-[#ff513b] font-semibold" : ""}`
               }
@@ -64,7 +64,7 @@ function Navbar() {
             </NavLink>
           </li>
           <li className="mx-3 relative">
-            <NavLink to="/cart" >
+            <NavLink to="/Ecommerce-Web-React/cart" >
               <img className="w-8" src={cartIcon} alt="" />
             </NavLink>
             <span className="absolute w-5 h-5 bg-[#ff523b] rounded-full top-[-10px] right-[-5px] text-center text-white leading-5">{cart.length}</span>
