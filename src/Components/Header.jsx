@@ -5,13 +5,13 @@ import image1 from "../assets/image1.png";
 function Header() {
   return (
     <>
-      <div className="custom-radial-gradient w-full h-screen">
-        <div className="flex justify-around items-center h-screen">
-          <div className="basis-1/2 mx-16">
-            <h1 className="font-bold text-6xl capitalize">
+      <div className="custom-radial-gradient w-full h-screen sm:h-screen pt-10">
+        <div className="flex justify-center items-center h-[100%] sm:h-[100%] flex-wrap md:flex-nowrap">
+          <div className="md:basis-1/2 mx-4 md:mx-16 mt-5">
+            <h1 className="font-bold text-xl md:text-4xl 2xl:text-7xl capitalize ">
               give your workout <br /> a new style!
             </h1>
-            <p className="mt-7">
+            <p className="mt-5 2xl:text-xl text-sm">
               Success isn't always about gratness. Its about consistency.
               Consistent <br /> hard work gain success. Greatness will come.
             </p>
@@ -22,7 +22,7 @@ function Header() {
               Explore Now &#8594;
             </a>
           </div>
-          <div className="basis-1/2 mx-10">
+          <div className="md:basis-1/2 mx-4 md:mx-16">
             <img src={image1} alt="" />
           </div>
         </div>

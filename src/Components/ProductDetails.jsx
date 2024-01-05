@@ -161,8 +161,8 @@ function ProductDetails() {
 
   return (
     <>
-      <div className="flex justify-center items-center max-w-[1080px] mx-auto pt-28 py-16">
-        <div className="basis-1/2 mx-5">
+      <div className="md:flex justify-center items-center max-w-[1080px] mx-auto pt-28 py-16">
+        <div className="basis-1/2 mx-5 mt-10">
           <img src={originalSrc} alt="product img" className="w-[100%]" />
           <div className="flex pt-2">
             <img
@@ -191,7 +191,7 @@ function ProductDetails() {
             />
           </div>
         </div>
-        <div className="basis-1/2">
+        <div className="basis-1/2 mx-5 mt-10">
           <p className="capitalize text-2xl font-normal">
             home / {showProduct.category}
           </p>

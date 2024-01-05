@@ -3,8 +3,8 @@ import React from "react";
 function Contact() {
   return (
     <>
-      <div className="flex justify-center items-start max-w-[1080px] mx-auto py-28">
-        <div className="basis-1/2 px-4">
+      <div className="md:flex justify-center items-start max-w-[1080px] mx-auto py-28">
+        <div className="basis-1/2 px-4 pt-7">
           <h2 className="text-3xl font-bold">Showroom Information</h2>
           <p className="pb-4 pt-7">
             Business subject long poetic reclined catch bits generality
@@ -29,7 +29,7 @@ function Contact() {
             hello@exapmle.com
           </p>
         </div>
-        <div className="basis-1/2 px-4">
+        <div className="basis-1/2 px-4 pt-7">
           <h2 className="text-3xl font-bold">Send us a Message</h2>
           <p className="pb-4 pt-7">
             Whether you’ve got product suggestions, pre-sale questions or even a

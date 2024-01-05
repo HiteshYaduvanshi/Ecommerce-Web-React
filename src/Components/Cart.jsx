@@ -26,7 +26,7 @@ function Cart() {
           <h1 className="text-center text-3xl font-semibold">Cart is empty</h1>
         </div>
       ) : (
-        <div className="py-28 max-w-[1080px] mx-auto min-h-[100%]">
+        <div className="py-28 max-w-[1080px] mx-auto min-h-[100%] 2xl:max-w-full px-5">
           <table className="w-full">
             <thead className="w-full text-left bg-[#ff523b] text-white">
               <tr>
@@ -39,7 +39,7 @@ function Cart() {
               {cart.map((cartItem) => (
                 <tr key={cartItem.id}>
                   <td className="p-4">
-                    <div className="flex justify-start items-start">
+                    <div className="sm:flex justify-start items-start">
                       <div>
                         <img
                           className="w-[100px] h-[100px] object-contain"
@@ -47,7 +47,7 @@ function Cart() {
                           alt=""
                         />
                       </div>
-                      <div className="mx-5">
+                      <div className="sm:mx-5">
                         <h1 className="capitalize font-semibold">
                           {cartItem.name}
                         </h1>
