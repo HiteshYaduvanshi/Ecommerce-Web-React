@@ -15,12 +15,12 @@ import productTwelve from "../assets/product-12.jpg";
 function Latest() {
   return (
     <>
-      <div className="py-12">
+      <div className="py-9 sm:py-12">
         <h1 className="text-center capitalize font-bold text-3xl text-[#555] relative ">
           Latest Products
           <span className="absolute bottom-[-15px] left-1/2 transform -translate-x-1/2 block bg-[#ff523b] h-1.5 w-28 rounded-full"></span>
         </h1>
-        <div className="flex flex-wrap items-center justify-center max-w-[1080px] mx-auto">
+        <div className="sm:flex flex-wrap items-center justify-center max-w-[1080px] 2xl:max-w-full 2xl:mx-12 mx-auto">
           <ProductCard
             imgScr={productFive}
             productName="gray shoes"

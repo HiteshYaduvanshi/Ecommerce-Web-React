@@ -11,7 +11,7 @@ function About() {
     <>
       <div className="max-w-[1080px] mx-auto py-28">
         <AboutBanner />
-        <div className="flex justify-center items-center py-3 mt-16 border">
+        <div className="md:flex justify-center items-center py-3 mt-16 border mx-7">
           <AboutCard
             icon={
               <FaTruckFast className="text-[#ff523b] text-2xl mx-auto leading-[50px]" />

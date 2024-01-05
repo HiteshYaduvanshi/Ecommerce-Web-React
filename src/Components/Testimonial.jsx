@@ -10,7 +10,7 @@ import userThree from "../assets/user-3.png";
 function Testimonial() {
   return (
     <>
-      <div className="flex justify-between items-center max-w-[1080px] mx-auto py-12">
+      <div className="sm:flex justify-between items-center max-w-[1080px] 2xl:max-w-full 2xl:mx-12 mx-auto py-12">
         <TestiCard
           imgScr={userOne}
           ratingOne={<FaStar />}

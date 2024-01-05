@@ -145,20 +145,20 @@ function ProductPage() {
 
   return (
     <>
-      <div className="py-28 max-w-[1080px] mx-auto">
+      <div className="py-28 px-5 max-w-[1080px] mx-auto 2xl:max-w-full 2xl:mx-16">
         <div className="py-5">
           <input
-            className="border w-full border-[#777] px-2 placeholder-black"
+            className="border w-full border-[#777] px-2 placeholder-black 2xl:p-5"
             type="text"
             placeholder="Search Product"
             value={searchValue}
             onChange={(e) => setSearchValue(e.target.value)}
           />
         </div>
-        <div className="flex justify-between items-center py-8">
-          <h2 className="font-bold text-2xl">All Products</h2>
+        <div className="flex flex-wrap justify-between items-center py-8">
+          <h2 className="font-bold text-2xl mr-5 my-3">All Products</h2>
           <select
-            className="border border-[#ff523b]"
+            className="border border-[#ff523b] my-3"
             name="sort"
             id="sort"
             value={selectedOption}
@@ -170,7 +170,7 @@ function ProductPage() {
             <option value="ascendinga2z">A to Z</option>
           </select>
         </div>
-        <div className="flex flex-wrap justify-center items-center max-w-[1080px] mx-auto">
+        <div className="md:flex flex-wrap justify-center items-center max-w-[1080px] 2xl:max-w-full  mx-auto">
           {filteredAndSortedProducts.map((product) => (
             <div
               key={product.id}
@@ -178,17 +178,17 @@ function ProductPage() {
             >
               <Link to={`/Ecommerce-Web-React/products/${product.id}`} >
                 <img src={product.imgSrc} alt="product img" />
-                <h2 className="capitalize mt-3 text-[20px] font-semibold my-1">
+                <h2 className="capitalize mt-3 text-[20px] font-semibold my-1 2xl:text-4xl">
                   {product.productName}
                 </h2>
-                <ul className="flex">
+                <ul className="flex 2xl:my-4">
                   {product.ratings.map((RatingIcon, index) => (
                     <li key={index} className="text-[#ff523b] mx-1">
                       <RatingIcon />
                     </li>
                   ))}
                 </ul>
-                <p className="mt-1 font-semibold text-[#555]">
+                <p className="mt-1 font-semibold text-[#555] 2xl:text-3xl">
                   ${product.price}
                 </p>
               </Link>
