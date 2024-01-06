@@ -21,7 +21,7 @@ function Navbar() {
         <ul className="sm:flex items-center hidden">
           <li className="mx-3">
             <NavLink 
-              to="/Ecommerce-Web-React/home"
+              to="/Ecommerce-Web-React/" end
               className={({isActive})=>`${isActive ? "text-[#ff513b] font-semibold" : ""}`}
             >
               Home

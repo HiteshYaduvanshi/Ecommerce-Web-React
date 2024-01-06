@@ -32,7 +32,7 @@ export const CartProvider = ({ children }) => {
   };
 
   const removeFromCart = (itemToRemove) => {
-    const updatedCart = cart.filter((item) => item.id !== itemToRemove.id);
+    const updatedCart = cart.filter((item) => item.id !== itemToRemove.id || item.size !== itemToRemove.size);
     setCart(updatedCart);
   };
 

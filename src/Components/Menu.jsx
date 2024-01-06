@@ -75,8 +75,8 @@ function Menu() {
           <div className="absolute top-[80px] left-0 px-7 w-full bg-[#555]">
             <ul className="text-center">
               <li className="m-3">
-                <NavLink
-                  to="/Ecommerce-Web-React/"
+                <NavLink         
+                  to="home"
                   className={({ isActive }) =>
                     `${
                       isActive
